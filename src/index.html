@@ -39,58 +39,68 @@
 			</div>
 		</section>
 	</section>
-	<section class=" bg-white w-full h-screen mt-5 pt-5 mb-10" id="prices">
-	<div class="flex flex-row justify-between space-x-2 mx-3 mt-2">
-		<div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
-			<img src="https://www.webshopcolombia.com/72-large_default/cebolla-cabezona-roja.jpg" alt="Imagen de cebolla" class="w-[200px] h-[150px] object-cover mx-[20px]">
-			<p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
-			<p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
-			<p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
-		</div>
-		<div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
-			<img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/194493/2080.jpg?v=637814055277670000" alt="Imagen de Fríjol" class="w-[200px] h-[150px] object-cover mx-[20px]">
-			<p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
-			<p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
-			<p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
-		</div>
-		<div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
-			<img src="https://www.mercadoscampesinos.gov.co/wp-content/uploads/2021/04/TOMATE-CHONTO.jpg" alt="Imagen de Tomate Chonto" class="w-[200px] h-[150px] object-cover mx-[20px]">
-			<p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
-			<p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
-			<p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
-		</div>
-		<div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
-			<img src="https://www.fruvext.com.co/wp-content/uploads/2021/06/mazorca.jpg" alt="Imagen de Mazorca" class="w-[200px] h-[150px] object-cover mx-[20px]">
-			<p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
-			<p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
-			<p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
-		</div>
-		<div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
-			<img src="https://frutiq.com.co/cdn/shop/files/shutterstock_247015708.jpg?v=1684289414" alt="Imagen de Pimentón" class="w-[200px] h-[150px] object-cover mx-[20px]">
-			<p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
-			<p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
-			<p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
-		</div>
-	</div>
-    <div id="graficas" class=" w-screen flex flex-col items-center justify-center pt-20">
-        <div class="h-[500px] w-[700px] ">
-            <ul class="w-full flex justify-around space-x-3 mb-10">
-                <button value="0" class="product_grafica bg-[color:var(--primary-color)] rounded font-semibold p-3 hover:bg-lime-600 text-white hover:scale-125">CEBOLLA CABEZONA ROJA</button>
-                <button value="1" class="product_grafica bg-[color:var(--primary-color)] rounded font-semibold p-3 hover:bg-lime-600 text-white hover:scale-125">FRIJOL VERDE</button>
-                <button value="2" class="product_grafica bg-[color:var(--primary-color)] rounded font-semibold p-3 hover:bg-lime-600 text-white hover:scale-125">TOMATE CHONTO</button>
-                <button value="3" class="product_grafica bg-[color:var(--primary-color)] rounded font-semibold p-3 hover:bg-lime-600 text-white hover:scale-125">MAZORCA</button>
-                <button value="4" class="product_grafica bg-[color:var(--primary-color)] rounded font-semibold p-3 hover:bg-lime-600 text-white hover:scale-125">PIMENTON</button>
-            </ul>
-            <canvas class="grafica object-cover"> </canvas>
+	<section class=" bg-white w-full h-screen mt-5 pt-5 mb-10 flex  flex-col" id="prices">
+        <div class="flex flex-row justify-between space-x-2 mx-3 mt-2">
+            <div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
+                <img src="https://www.webshopcolombia.com/72-large_default/cebolla-cabezona-roja.jpg" alt="Imagen de cebolla" class="w-[200px] h-[150px] object-cover mx-[20px]">
+                <p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
+                <p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
+                <p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
+            </div>
+            <div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
+                <img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/194493/2080.jpg?v=637814055277670000" alt="Imagen de Fríjol" class="w-[200px] h-[150px] object-cover mx-[20px]">
+                <p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
+                <p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
+                <p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
+            </div>
+            <div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
+                <img src="https://www.mercadoscampesinos.gov.co/wp-content/uploads/2021/04/TOMATE-CHONTO.jpg" alt="Imagen de Tomate Chonto" class="w-[200px] h-[150px] object-cover mx-[20px]">
+                <p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
+                <p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
+                <p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
+            </div>
+            <div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
+                <img src="https://www.fruvext.com.co/wp-content/uploads/2021/06/mazorca.jpg" alt="Imagen de Mazorca" class="w-[200px] h-[150px] object-cover mx-[20px]">
+                <p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
+                <p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
+                <p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
+            </div>
+            <div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
+                <img src="https://frutiq.com.co/cdn/shop/files/shutterstock_247015708.jpg?v=1684289414" alt="Imagen de Pimentón" class="w-[200px] h-[150px] object-cover mx-[20px]">
+                <p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
+                <p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
+                <p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
+            </div>
         </div>
+        <div id="graficas" class=" w-screen flex flex-col items-center justify-center pt-20">
+            <div class="h-[700px] w-[700px] ">
+                <ul class="w-full flex justify-around space-x-3 mb-10">
+                    <button value="0" class="product_grafica bg-[color:var(--primary-color)] rounded font-semibold p-3 hover:bg-lime-600 text-white hover:scale-125">CEBOLLA CABEZONA ROJA</button>
+                    <button value="1" class="product_grafica bg-[color:var(--primary-color)] rounded font-semibold p-3 hover:bg-lime-600 text-white hover:scale-125">FRIJOL VERDE</button>
+                    <button value="2" class="product_grafica bg-[color:var(--primary-color)] rounded font-semibold p-3 hover:bg-lime-600 text-white hover:scale-125">TOMATE CHONTO</button>
+                    <button value="3" class="product_grafica bg-[color:var(--primary-color)] rounded font-semibold p-3 hover:bg-lime-600 text-white hover:scale-125">MAZORCA</button>
+                    <button value="4" class="product_grafica bg-[color:var(--primary-color)] rounded font-semibold p-3 hover:bg-lime-600 text-white hover:scale-125">PIMENTON</button>
+                </ul>
+                <canvas class="grafica object-cover"> </canvas>
+            </div>
+            
+        </div>
+    </section>
 
-    </div>
-    
-	</section>
-	<section class="bg-white w-screen h-[500px]  pt-5 pb-20 flex items-center">
-        <div class="w-screen flex justify-center  " >
+    <section class=" flex h-[350px] w-screen mt-80 justify-center">
+        <div id="recomendacion" class=" ">
+            <h3>PRODUCTO RECOMENDADO</h3>
+            <div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
+                <img id="img_recomendacion" src="" alt="Imagen" class="w-[200px] h-[150px] object-cover mx-[20px]">
+                <p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="recomendacion_name"></p>
+            </div>        
+        </div>
+    </section>
+
+    <section class="bg-white w-screen h-[500px]  pt-5 pb-20 flex items-center justify-center">
+        <div class="w-full h-full flex justify-center items-center " >
             <div class="flex h-8 mt-10 flex-col space-y-3 rounded-lg shadow  bg-blue-300/80 ">
-                <label class="text-center font-bold text-[color:var(--primary-color)] flex items-center justify-center p-2 h-full" for="">PRODUCTO</label>
+                <label class="text-center font-bold text-[color:var(--primary-color)] flex items-center justify-center p-2" for="">PRODUCTO</label>
                 <select id="producto" name="estado" class="rounded-lg shadow bg-transparent p-3">
                     <option  class="producto" value=0 >CEBOLLA CABEZONA ROJA</option>
                     <option class="producto" value="1">FRIJOL VERDE</option>
@@ -106,9 +116,7 @@
     
     
         </div>
-	</section>
-
-
+    </section>
 
     <footer class="w-full flex justify-center pt-7 bg-[color:var(--third-color)]">
         <div class="text-[color:var(--primary-color)]  h-auto  flex flex-col w-full ">

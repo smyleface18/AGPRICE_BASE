@@ -166,15 +166,48 @@ var mychart = new Chart(grafica, {
                 scales: {
                     y: {
                         min:0,
-                        max:10,
+
                     }
                 }
             });
         });
     }
 
+// recomer un producto
 
+var price_comparation = [0,0,0,0,0];
+var score = [0,0,0,0,0];
+for (let i = 0; i < historical_prices.length; i++) {
 
+    const product = historical_prices[i];
+    for (let j = 0; j < 5 ; j++) {
+        const element = product[j];
+        if(price_comparation[j] > product[j].price){
+            
+            score[j] += 0;
+            price_comparation[j] = product[j].price             
+        }
+        else if( price_comparation[j] == product[j].price){
+            score[j] += 1;
+            price_comparation[j] = product[j].price  
+        }
+        else if(price_comparation[j] < product[j].price){
+            score[j] += 2;
+            price_comparation[j] = product[j].price             
+        }
 
+    }
+}
+var recomendado = 0
+for (let index = 1; index < score.length; index++) {
+    if(score[recomendado] < score[index]){
+        recomendado = index;
+    }
+}
+var List_Img = ["https://www.webshopcolombia.com/72-large_default/cebolla-cabezona-roja.jpg","https://jumbocolombiaio.vtexassets.com/arquivos/ids/194493/2080.jpg?v=637814055277670000","https://www.mercadoscampesinos.gov.co/wp-content/uploads/2021/04/TOMATE-CHONTO.jpg","https://www.fruvext.com.co/wp-content/uploads/2021/06/mazorca.jpg","https://frutiq.com.co/cdn/shop/files/shutterstock_247015708.jpg?v=1684289414"]
 
+const recomendacion_name = document.querySelector("#recomendacion_name");
+const img_recomendacion = document.querySelector("#img_recomendacion");
 
+recomendacion_name.innerHTML = historical_prices[0][recomendado].name;
+img_recomendacion.src = List_Img[recomendado]
