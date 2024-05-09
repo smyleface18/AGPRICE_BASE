@@ -82,18 +82,19 @@
              }
          });
  
- //      Funcionalidad para mostrar los precios
- 
+ //      Funcionalidad para mostrar los precios 
+            
              const nameCards = [...document.querySelectorAll('#name')];
                  for (let index = 0; index < nameCards.length; index++) {
                      const element = nameCards[index];
                      element.innerHTML= myJson[index].name
                  }
- 
+                 
              const priceCards = [...document.querySelectorAll('#price')];
                  for (let index = 0; index < priceCards.length; index++) {
                      const element = priceCards[index];
                      element.innerHTML= "$"+myJson[index].price*1000+" X Kilo"
+                    
                  }
  
              const locationCards = [...document.querySelectorAll('#ciudad')];
@@ -104,7 +105,21 @@
  
                  localStorage.setItem("myJson", JSON.stringify(myJson));                        
  
- 
+// Calculadora
+    /*const prices = [...document.querySelectorAll('#prices')]; 
+    const numbers = [...document.querySelectorAll('#numbers')]; 
+    const pesos = [...document.querySelectorAll('#peso')];
+    const calculation = [...document.querySelectorAll('#calcular')]
+        
+        for (let index = 0; index < prices.length; index++) {
+            calculation[index].addEventListener("click", () => {
+                const newPrice = prices[index];
+                const pesoValue = parseFloat(pesos[index].value);
+                const numberValue = parseFloat(numbers[index].value);
+                newPrice.innerHTML = "$"+(myJson[index].price*pesoValue) *numberValue;
+        })}
+        */
+
 //hacemos otro get a la api 
 
 var historical_prices
@@ -173,7 +188,7 @@ var mychart = new Chart(grafica, {
         });
     }
 
-// recomer un producto
+// recomendar un producto
 
 var price_comparation = [0,0,0,0,0];
 var score = [0,0,0,0,0];
