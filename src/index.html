@@ -10,24 +10,23 @@
     <menu class=" relative w-full h-16"> 
         <nav class="bg-[color:var(--primary-color)] w-full h-16 fixed">
             <ul class="flex w-full  justify-around items-center h-full">
-                <a href="#inicio"><li class="  px-3 pb-1 rounded-2xl text-white font-bold text-xl hover:text-[color:var(--dawn-color)]   ">Inicio</li></a>
-                <a href="#prices"><li class="  px-3 pb-1 rounded-2xl text-white font-bold text-xl hover:text-[color:var(--dawn-color)]   ">Precios</li></a>
-                <a href="#graficas"><li class="  px-3 pb-1 rounded-2xl text-white font-bold text-xl hover:text-[color:var(--dawn-color)]   ">Tendencias</li></a>
-                <a href="#contact"><li class="  px-3 pb-1 rounded-2xl text-white font-bold text-xl hover:text-[color:var(--dawn-color)]   ">Contacto</li></a>
-                <a href=""><li class="bg-white  px-3 pb-1 rounded-2xl text-[color:var(--primary-color)] font-bold text-xl hover:bg-[color:var(--dawn-color)]">Registrarse</li></a>
+                <a href=""><li class="  px-3 pb-1 rounded-2xl text-white font-bold text-xl hover:text-[color:var(--dawn-color)]   ">Opcion 5</li></a>
+                <a href=""><li class="  px-3 pb-1 rounded-2xl text-white font-bold text-xl hover:text-[color:var(--dawn-color)]   ">Opcion 5</li></a>
+                <a href=""><li class="  px-3 pb-1 rounded-2xl text-white font-bold text-xl hover:text-[color:var(--dawn-color)]   ">Opcion 5</li></a>
+                <a href=""><li class="  px-3 pb-1 rounded-2xl text-white font-bold text-xl hover:text-[color:var(--dawn-color)]   ">Opcion 5</li></a>
+                <a href=""><li class="bg-white  px-3 pb-1 rounded-2xl text-[color:var(--primary-color)] font-bold text-xl hover:bg-[color:var(--dawn-color)]">Opcion diferente</li></a>
             </ul>
         </nav>
     </menu>
 
     <section class="bg-[color:var(--primary-color)] h-screen w-full flex items-center " id="inicio">
 		<section class=" w-full h-96 flex justify-center items-center">
-			<div class="h-full w-72 flex flex-col  mr-3 justify-center items-center">
-				<img class="w-[70%]" src="../public/logo-removebg-preview.png" alt="">
-				<h4 class="text-white font-extrabold text-5xl text-center">AGPRICE</h4>
+			<div class="h-full w-[800px] flex flex-col  mr-3 justify-center items-center">
+				<img class="" src="../public\logo_agroprice.png" alt="">
 			</div>
 
 			<div class="h-full w-2/3 flex flex-col justify-center items-center">
-				<p class="text-center text-white  text-2xl mb-2" >En la era actual de la agricultura y el comercio,
+				<p class="text-center text-white  text-xl mb-2 pr-10" >En la era actual de la agricultura y el comercio,
 					 la capacidad de acceder y analizar los precios agrícolas en tiempo real es fundamental para productores, 
 					 comerciantes y consumidores. AGPrice es un proyecto diseñado para abordar esta necesidad crítica al proporcionar
 					  una plataforma innovadora que permite visualizar de manera dinámica y en tiempo real los precios de productos agrícolas clave.
@@ -41,85 +40,45 @@
 	</section>
 	<section class=" bg-white w-full h-screen mt-5 pt-5 mb-10 flex  flex-col" id="prices">
         <div class="flex flex-row justify-between space-x-2 mx-3 mt-2">
-            <div class="h-[460px] w-[260px] bg-white flex shadow flex-col rounded-lg">
+            <div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
                 <img src="https://www.webshopcolombia.com/72-large_default/cebolla-cabezona-roja.jpg" alt="Imagen de cebolla" class="w-[200px] h-[150px] object-cover mx-[20px]">
                 <p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
                 <p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
                 <p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
-                <h4 class="font-bold text-[color:var(--primary-color)] text-center m-4">Equivalencia por bulto</h4>
-                <div class="flex flex-row mx-2">
-                <input type="number" placeholder="N° de Bultos" class="w-28 p-1 rounded-lg shadow text-black/25 " id="numbers">
-                <span class="text-xl text-black mx-1">X</span>
-                <input type="number" placeholder="Peso en Kg" class="w-28 p-1 rounded-lg shadow text-black/25" id="peso">
-                </div>
-                <button class="h-auto m-auto p-2 text-[color:var(--third-color)] bg-[color:var(--primary-color)] text-center rounded-lg shadow mt-2" id="calcular">Calcular</button>
-                <p class="font-bold text-[color:var(--primary-color)] mt-2 text-xl" id="prices"></p>
             </div>
-            <div class="h-[460px] w-[260px] bg-white flex shadow flex-col rounded-lg">
+            <div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
                 <img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/194493/2080.jpg?v=637814055277670000" alt="Imagen de Fríjol" class="w-[200px] h-[150px] object-cover mx-[20px]">
                 <p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
                 <p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
                 <p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
-                <h4 class="font-bold text-[color:var(--primary-color)] text-center m-4">Equivalencia por bulto</h4>
-                <div class="flex flex-row mx-2">
-                <input type="number" placeholder="N° de Bultos" class="w-28 p-1 rounded-lg shadow text-black/25 " id="numbers">
-                <span class="text-xl text-black mx-1">X</span>
-                <input type="number" placeholder="Peso en Kg" class="w-28 p-1 rounded-lg shadow text-black/25" id="peso">
-                </div>
-                <button class="h-auto m-auto p-2 text-[color:var(--third-color)] bg-[color:var(--primary-color)] text-center rounded-lg shadow mt-2" id="calcular">Calcular</button>
-                <p class="font-bold text-[color:var(--primary-color)] mt-2 text-xl" id="prices"></p>
             </div>
-            <div class="h-[460px] w-[260px] bg-white flex shadow flex-col rounded-lg">
+            <div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
                 <img src="https://www.mercadoscampesinos.gov.co/wp-content/uploads/2021/04/TOMATE-CHONTO.jpg" alt="Imagen de Tomate Chonto" class="w-[200px] h-[150px] object-cover mx-[20px]">
                 <p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
                 <p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
                 <p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
-                <h4 class="font-bold text-[color:var(--primary-color)] text-center m-4">Equivalencia por bulto</h4>
-                <div class="flex flex-row mx-2">
-                <input type="number" placeholder="N° de Bultos" class="w-28 p-1 rounded-lg shadow text-black/25 " id="numbers">
-                <span class="text-xl text-black mx-1">X</span>
-                <input type="number" placeholder="Peso en Kg" class="w-28 p-1 rounded-lg shadow text-black/25" id="peso">
-                </div>
-                <button class="h-auto m-auto p-2 text-[color:var(--third-color)] bg-[color:var(--primary-color)] text-center rounded-lg shadow mt-2" id="calcular">Calcular</button>
-                <p class="font-bold text-[color:var(--primary-color)] mt-2 text-xl" id="prices"></p>
             </div>
-            <div class="h-[460px] w-[260px] bg-white flex shadow flex-col rounded-lg">
+            <div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
                 <img src="https://www.fruvext.com.co/wp-content/uploads/2021/06/mazorca.jpg" alt="Imagen de Mazorca" class="w-[200px] h-[150px] object-cover mx-[20px]">
                 <p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
                 <p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
                 <p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
-                <h4 class="font-bold text-[color:var(--primary-color)] text-center m-4">Equivalencia por bulto</h4>
-                <div class="flex flex-row mx-2">
-                <input type="number" placeholder="N° de Bultos" class="w-28 p-1 rounded-lg shadow text-black/25 " id="numbers">
-                <span class="text-xl text-black mx-1">X</span>
-                <input type="number" placeholder="Peso en Kg" class="w-28 p-1 rounded-lg shadow text-black/25" id="peso">
-                </div>
-                <button class="h-auto m-auto p-2 text-[color:var(--third-color)] bg-[color:var(--primary-color)] text-center rounded-lg shadow mt-2" id="calcular">Calcular</button>
-                <p class="font-bold text-[color:var(--primary-color)] mt-2 text-xl" id="prices"></p>
             </div>
-            <div class="h-[460px] w-[260px] bg-white flex shadow flex-col rounded-lg">
+            <div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
                 <img src="https://frutiq.com.co/cdn/shop/files/shutterstock_247015708.jpg?v=1684289414" alt="Imagen de Pimentón" class="w-[200px] h-[150px] object-cover mx-[20px]">
                 <p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
                 <p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
                 <p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
-                <h4 class="font-bold text-[color:var(--primary-color)] text-center m-4">Equivalencia por bulto</h4>
-                <div class="flex flex-row mx-2">
-                <input type="number" placeholder="N° de Bultos" class="w-28 p-1 rounded-lg shadow text-black/25 " id="numbers">
-                <span class="text-xl text-black mx-1">X</span>
-                <input type="number" placeholder="Peso en Kg" class="w-28 p-1 rounded-lg shadow text-black/25" id="peso">
-                </div>
-                <button class="h-auto m-auto p-2 text-[color:var(--third-color)] bg-[color:var(--primary-color)] text-center rounded-lg shadow mt-2" id="calcular">Calcular</button>
-                <p class="font-bold text-[color:var(--primary-color)] mt-2 text-xl" id="prices"></p>
             </div>
         </div>
-        <div id="graficas" class=" w-screen flex flex-col items-center justify-center pt-20 mb-20">
+        <div id="graficas" class=" w-screen flex flex-col items-center justify-center pt-20">
             <div class="h-[700px] w-[700px] ">
                 <ul class="w-full flex justify-around space-x-3 mb-10">
-                    <button value="0" class="product_grafica bg-[color:var(--primary-color)] rounded font-bold  p-5 hover:bg-white hover:text-[color:var(--primary-color)] text-white hover:scale-110">CEBOLLA CABEZONA ROJA</button>
-                    <button value="1" class="product_grafica bg-[color:var(--primary-color)] rounded font-bold p-5  hover:bg-white hover:text-[color:var(--primary-color)] text-white hover:scale-110">FRIJOL VERDE</button>
-                    <button value="2" class="product_grafica bg-[color:var(--primary-color)] rounded font-bold p-5 hover:bg-white hover:text-[color:var(--primary-color)] text-white hover:scale-110">TOMATE CHONTO</button>
-                    <button value="3" class="product_grafica bg-[color:var(--primary-color)] rounded font-bold p-5 hover:bg-white hover:text-[color:var(--primary-color)] text-white hover:scale-110">MAZORCA</button>
-                    <button value="4" class="product_grafica bg-[color:var(--primary-color)] rounded font-bold p-5 hover:bg-white hover:text-[color:var(--primary-color)] text-white hover:scale-110">PIMENTON</button>
+                    <button value="0" class="product_grafica bg-[color:var(--primary-color)] rounded font-semibold p-3 hover:bg-lime-600 text-white hover:scale-125">CEBOLLA CABEZONA ROJA</button>
+                    <button value="1" class="product_grafica bg-[color:var(--primary-color)] rounded font-semibold p-3 hover:bg-lime-600 text-white hover:scale-125">FRIJOL VERDE</button>
+                    <button value="2" class="product_grafica bg-[color:var(--primary-color)] rounded font-semibold p-3 hover:bg-lime-600 text-white hover:scale-125">TOMATE CHONTO</button>
+                    <button value="3" class="product_grafica bg-[color:var(--primary-color)] rounded font-semibold p-3 hover:bg-lime-600 text-white hover:scale-125">MAZORCA</button>
+                    <button value="4" class="product_grafica bg-[color:var(--primary-color)] rounded font-semibold p-3 hover:bg-lime-600 text-white hover:scale-125">PIMENTON</button>
                 </ul>
                 <canvas class="grafica object-cover"> </canvas>
             </div>
@@ -127,7 +86,7 @@
         </div>
     </section>
 
-    <section class=" flex h-[350px] w-screen mt-96 justify-center">
+    <section class=" flex h-[350px] w-screen mt-80 justify-center">
         <div id="recomendacion" class=" ">
             <h3>PRODUCTO RECOMENDADO</h3>
             <div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
@@ -149,6 +108,7 @@
                     <option class="producto" value="4">PIMENTON</option>
                 </select>
                 <input id="value_desired" type="text" placeholder="Precio Deseado" class="rounded-lg border p-1">
+                <input id="email" type="email" placeholder="Correo Electrónico" class="rounded-lg border p-1">
     
                 <button id="button_desired" class="w-auto h-auto p-2 font-bold text-[color:var(--primary-color)] bg-[color:var(--third-color)] shadow rounded-lg">CLICK</button>
             </div>
@@ -157,7 +117,7 @@
         </div>
     </section>
 
-    <footer class="w-full flex justify-center pt-7 bg-[color:var(--third-color)] " id="contact">
+    <footer class="w-full flex justify-center pt-7 bg-[color:var(--third-color)]">
         <div class="text-[color:var(--primary-color)]  h-auto  flex flex-col w-full ">
                 <h3 class=" flex text-2xl justify-center font-bold">Ínformate sobre Nosotros</h3>
                 <div class="flex flex-row justify-center mt-4 space-x-10">
