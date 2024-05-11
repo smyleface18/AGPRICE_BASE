@@ -15,7 +15,8 @@
      const value_desired = document.querySelector("#value_desired");
      const button = document.querySelector("#button_desired");
      const PRODUCT = document.querySelector("#producto"); 
-     
+     const email_user = document.querySelector("#email");
+     console.log(email_user);
  
  
      localStorage.setItem("alert_reload", false)
@@ -65,7 +66,7 @@
      });
  
  
- 
+
          button.addEventListener("click",()=>{
              let index_product = localStorage.getItem("index_product");
              localStorage.setItem("value_desired", value_desired.value);
@@ -77,8 +78,25 @@
                  value_desired.value = "";
              }
              else{
-                 localStorage.setItem("alert_reload",true);
-                 console.log("entro")
+                    localStorage.setItem("alert_reload",true);
+                    let json_post = { 
+                        "email" : email_user.value,
+                        "index" : localStorage.getItem("index_product"),
+                        "value" : localStorage.getItem("value_desired")
+                    }
+                     json_post = JSON.stringify(json_post);
+                    console.log(json_post)
+                    const post_alert = fetch("http://127.0.0.1:8000/alert_price",{
+                        method: "POST",
+                        mode: "cors",
+                        headers:{
+                                "Content-Type": "application/json",
+                                "Accept": "application/json"
+                        },
+                        body:json_post
+                    } 
+
+                    )
              }
          });
  
@@ -93,7 +111,7 @@
              const priceCards = [...document.querySelectorAll('#price')];
                  for (let index = 0; index < priceCards.length; index++) {
                      const element = priceCards[index];
-                     element.innerHTML= "$"+myJson[index].price*1000+" X Kilo"
+                     element.innerHTML= "$"+((myJson[index].price*1000).toLocaleString('en'))+" X Kilo"
                     
                  }
  
@@ -106,19 +124,24 @@
                  localStorage.setItem("myJson", JSON.stringify(myJson));                        
  
 // Calculadora
-    /*const prices = [...document.querySelectorAll('#prices')]; 
+    const new_prices = [...document.querySelectorAll('#new_prices')]; 
     const numbers = [...document.querySelectorAll('#numbers')]; 
     const pesos = [...document.querySelectorAll('#peso')];
     const calculation = [...document.querySelectorAll('#calcular')]
         
-        for (let index = 0; index < prices.length; index++) {
+        for (let index = 0; index < new_prices.length; index++) {
             calculation[index].addEventListener("click", () => {
-                const newPrice = prices[index];
+                const price = new_prices[index];
                 const pesoValue = parseFloat(pesos[index].value);
                 const numberValue = parseFloat(numbers[index].value);
-                newPrice.innerHTML = "$"+(myJson[index].price*pesoValue) *numberValue;
+                price.innerHTML = "$"+((myJson[index].price*pesoValue) *numberValue*1000).toLocaleString('en');
         })}
-        */
+        
+
+
+
+
+
 
 //hacemos otro get a la api 
 

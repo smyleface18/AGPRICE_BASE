@@ -19,14 +19,14 @@
         </nav>
     </menu>
 
-    <section class="bg-[color:var(--primary-color)] h-screen w-full flex items-center " id="inicio">
+    <section class="bg-[color:var(--primary-color)] h-screen w-screen flex items-center " id="inicio">
 		<section class=" w-full h-96 flex justify-center items-center">
-			<div class="h-full w-[800px] flex flex-col  mr-3 justify-center items-center ">
-				<img class="" src="../public\logo_agroprice.png" alt="">
+			<div class="h-full w-[700px] flex flex-col  mr-3 justify-center items-center">
+				<img class="" src="../public/logo_agroprice.png" alt="">
 			</div>
 
 			<div class="h-full w-2/3 flex flex-col justify-center items-center">
-				<p class="text-center text-white  text-xl mb-2 pr-10" >En la era actual de la agricultura y el comercio,
+				<p class="text-center text-white  text-xl mb-2 pr-36" >En la era actual de la agricultura y el comercio,
 					 la capacidad de acceder y analizar los precios agrícolas en tiempo real es fundamental para productores, 
 					 comerciantes y consumidores. AGPrice es un proyecto diseñado para abordar esta necesidad crítica al proporcionar
 					  una plataforma innovadora que permite visualizar de manera dinámica y en tiempo real los precios de productos agrícolas clave.
@@ -45,30 +45,70 @@
                 <p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
                 <p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
                 <p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
+                <h4 class="font-bold text-[color:var(--primary-color)] text-center m-4">Equivalencia por bulto</h4>
+                <div class="flex flex-row mx-2">
+                <input type="number" placeholder="N° de Bultos" class="w-28 p-1 rounded-lg shadow text-black/25 " id="numbers">
+                <span class="text-xl text-black mx-1">X</span>
+                <input type="number" placeholder="Peso en Kg" class="w-28 p-1 rounded-lg shadow text-black/25" id="peso">
+                </div>
+                <button class="h-auto m-auto p-2 text-[color:var(--third-color)] bg-[color:var(--primary-color)] text-center rounded-lg shadow mt-2" id="calcular">Calcular</button>
+                <p class="font-bold text-[color:var(--primary-color)] mt-2 text-xl h-7 bg-slate-500" id="new_prices"></p>
             </div>
             <div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
                 <img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/194493/2080.jpg?v=637814055277670000" alt="Imagen de Fríjol" class="w-[200px] h-[150px] object-cover mx-[20px]">
                 <p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
                 <p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
                 <p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
+                <h4 class="font-bold text-[color:var(--primary-color)] text-center m-4">Equivalencia por bulto</h4>
+                <div class="flex flex-row mx-2">
+                <input type="number" placeholder="N° de Bultos" class="w-28 p-1 rounded-lg shadow text-black/25 " id="numbers">
+                <span class="text-xl text-black mx-1">X</span>
+                <input type="number" placeholder="Peso en Kg" class="w-28 p-1 rounded-lg shadow text-black/25" id="peso">
+                </div>
+                <button class="h-auto m-auto p-2 text-[color:var(--third-color)] bg-[color:var(--primary-color)] text-center rounded-lg shadow mt-2" id="calcular">Calcular</button>
+                <p class="font-bold text-[color:var(--primary-color)] mt-2 text-xl h-7 bg-slate-500" id="new_prices"></p>
             </div>
             <div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
                 <img src="https://www.mercadoscampesinos.gov.co/wp-content/uploads/2021/04/TOMATE-CHONTO.jpg" alt="Imagen de Tomate Chonto" class="w-[200px] h-[150px] object-cover mx-[20px]">
                 <p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
                 <p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
                 <p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
+                <h4 class="font-bold text-[color:var(--primary-color)] text-center m-4">Equivalencia por bulto</h4>
+                <div class="flex flex-row mx-2">
+                <input type="number" placeholder="N° de Bultos" class="w-28 p-1 rounded-lg shadow text-black/25 " id="numbers">
+                <span class="text-xl text-black mx-1">X</span>
+                <input type="number" placeholder="Peso en Kg" class="w-28 p-1 rounded-lg shadow text-black/25" id="peso">
+                </div>
+                <button class="h-auto m-auto p-2 text-[color:var(--third-color)] bg-[color:var(--primary-color)] text-center rounded-lg shadow mt-2" id="calcular">Calcular</button>
+                <p class="font-bold text-[color:var(--primary-color)] mt-2 text-xl h-7 bg-slate-500" id="new_prices"></p>
             </div>
             <div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
                 <img src="https://www.fruvext.com.co/wp-content/uploads/2021/06/mazorca.jpg" alt="Imagen de Mazorca" class="w-[200px] h-[150px] object-cover mx-[20px]">
                 <p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
                 <p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
                 <p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
+                <h4 class="font-bold text-[color:var(--primary-color)] text-center m-4">Equivalencia por bulto</h4>
+                <div class="flex flex-row mx-2">
+                <input type="number" placeholder="N° de Bultos" class="w-28 p-1 rounded-lg shadow text-black/25 " id="numbers">
+                <span class="text-xl text-black mx-1">X</span>
+                <input type="number" placeholder="Peso en Kg" class="w-28 p-1 rounded-lg shadow text-black/25" id="peso">
+                </div>
+                <button class="h-auto m-auto p-2 text-[color:var(--third-color)] bg-[color:var(--primary-color)] text-center rounded-lg shadow mt-2" id="calcular">Calcular</button>
+                <p class="font-bold text-[color:var(--primary-color)] mt-2 text-xl h-7 bg-slate-500" id="new_prices"></p>
             </div>
             <div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
                 <img src="https://frutiq.com.co/cdn/shop/files/shutterstock_247015708.jpg?v=1684289414" alt="Imagen de Pimentón" class="w-[200px] h-[150px] object-cover mx-[20px]">
                 <p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
                 <p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
                 <p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
+                <h4 class="font-bold text-[color:var(--primary-color)] text-center m-4">Equivalencia por bulto</h4>
+                <div class="flex flex-row mx-2">
+                <input type="number" placeholder="N° de Bultos" class="w-28 p-1 rounded-lg shadow text-black/25 " id="numbers">
+                <span class="text-xl text-black mx-1">X</span>
+                <input type="number" placeholder="Peso en Kg" class="w-28 p-1 rounded-lg shadow text-black/25" id="peso">
+                </div>
+                <button class="h-auto m-auto p-2 text-[color:var(--third-color)] bg-[color:var(--primary-color)] text-center rounded-lg shadow mt-2" id="calcular">Calcular</button>
+                <p class="font-bold text-[color:var(--primary-color)] mt-2 text-xl h-7 bg-slate-500" id="new_prices"></p>
             </div>
         </div>
         <div id="graficas" class=" w-screen flex flex-col items-center justify-center pt-20">
@@ -107,9 +147,8 @@
                     <option class="producto" value="3">MAZORCA</option>
                     <option class="producto" value="4">PIMENTON</option>
                 </select>
-                <input id="value_desired" type="text" placeholder="Precio Deseado" class="rounded-lg border p-1">
-                <input id="email" type="email" placeholder="Correo Electrónico" class="rounded-lg border p-1">
-    
+                <input id="value_desired" type="number" placeholder="Precio Deseado" class="rounded-lg border p-1">
+                <input id="email" type="email" placeholder="Ingresa tu email" class="rounded-lg border p-1">
                 <button id="button_desired" class="w-auto h-auto p-2 font-bold text-[color:var(--primary-color)] bg-[color:var(--third-color)] shadow rounded-lg">CLICK</button>
             </div>
     
