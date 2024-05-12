@@ -128,13 +128,15 @@
     const numbers = [...document.querySelectorAll('#numbers')]; 
     const pesos = [...document.querySelectorAll('#peso')];
     const calculation = [...document.querySelectorAll('#calcular')]
-        
+    const message =[...document.querySelectorAll('#message')]
+
         for (let index = 0; index < new_prices.length; index++) {
             calculation[index].addEventListener("click", () => {
-                const price = new_prices[index];
-                const pesoValue = parseFloat(pesos[index].value);
-                const numberValue = parseFloat(numbers[index].value);
+                let price = new_prices[index];
+                let pesoValue = parseFloat(pesos[index].value);
+                let numberValue = parseFloat(numbers[index].value);
                 price.innerHTML = "$"+((myJson[index].price*pesoValue) *numberValue*1000).toLocaleString('en');
+                message[index].innerHTML = "Tenga en cuenta que este valor se puede ver disminuido por el valor del flete y la calidad de su producto."
         })}
         
 

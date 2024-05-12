@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color:#1a3d5d;
+            --secundary-color:#4cbc9a;
+            --third-color:rgba(244, 244, 244, 0.859);
+            --dawn-color:#eeeb4f;
+        }
+        body {
+            background-color: var(--primary-color);
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center h-screen">
+    <div class="bg-transparent p-8 rounded-lg shadow-md w-80">
+        <h2 class="text-2xl font-bold mb-6 text-center text-white hover:text-[#eeeb4f]">Regístrate</h2>
+        <form>
+            <div class="flex items-center mb-4">
+                <svg class="size-8 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-width="2" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                  </svg>
+                <input type="text" placeholder="Nombre de usuario" class="border-2 border-gray-200 p-2 w-full rounded-lg">
+            </div>
+            <div class="flex items-center mb-4">
+                <svg class="size-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"/>
+                  </svg>
+                  
+                <input type="email" placeholder="Correo Electrónico" class="border-2 border-gray-200 p-2 w-full rounded-lg">
+            </div>
+            <div class="flex items-center mb-4">
+                <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M8 10V7a4 4 0 1 1 8 0v3h1a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h1Zm2-3a2 2 0 1 1 4 0v3h-4V7Zm2 6a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1Z" clip-rule="evenodd"/>
+                  </svg>
+                  
+                <input type="password" placeholder="Contraseña" class="border-2 border-gray-200 p-2 w-full rounded-lg">
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-white font-bold hover:text-blue-500">Registrarse</button>
+        </form>
+    </div>
+</body>
+</html>
