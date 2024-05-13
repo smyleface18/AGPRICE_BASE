@@ -81,8 +81,8 @@
                     localStorage.setItem("alert_reload",true);
                     let json_post = { 
                         "email" : email_user.value,
-                        "index" : localStorage.getItem("index_product"),
-                        "value" : localStorage.getItem("value_desired")
+                        "index" : parseInt(localStorage.getItem("index_product")),
+                        "value" : parseInt(localStorage.getItem("value_desired"))
                     }
                      json_post = JSON.stringify(json_post);
                     console.log(json_post)
