@@ -46,7 +46,7 @@
      // llamada a la api
  
      var myJson
-      await fetch("http://127.0.0.1:8000/price",options)
+      await fetch("https://api-agroprice.onrender.com/price",options)
          .then(res => res.json())
          .then(data =>{
               myJson = data;})
@@ -86,7 +86,7 @@
                     }
                      json_post = JSON.stringify(json_post);
                     console.log(json_post)
-                    const post_alert = fetch("http://127.0.0.1:8000/alert_price",{
+                    const post_alert = fetch("https://api-agroprice.onrender.com/alert_price",{
                         method: "POST",
                         mode: "cors",
                         headers:{
@@ -148,7 +148,7 @@
 //hacemos otro get a la api 
 
 var historical_prices
-await fetch("http://127.0.0.1:8000/historical/prices",options)
+await fetch("https://api-agroprice.onrender.com/historical/prices",options)
 .then(res => res.json())
 .then(data =>{
     historical_prices = data;})
