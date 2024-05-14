@@ -171,7 +171,7 @@ var mychart = new Chart(grafica, {
         datasets:[
             {
                 label:title,
-                data: historical_prices.map( product => product[index_data].price)
+                data: historical_prices.map( product => (product[index_data].price)*1000)
             }
         ]
     },
@@ -199,7 +199,7 @@ var mychart = new Chart(grafica, {
                     datasets:[
                         {
                             label:title,
-                            data: historical_prices.map( product => product[index_data].price)
+                            data: historical_prices.map( product => (product[index_data].price)*1000)
                         }
                     ]
                 },
